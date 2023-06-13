@@ -53,7 +53,7 @@ def consulta_centrodetrabajo():
     print("df.tail(6)=",df.tail(6))
    # print("df.sample(6)=",df.sample(6))
     df.ciudad = df.ciudad.map(lambda x: x+ " " +random.choice (adjetivos))
-    print("df_dept.head(10)= ", df.head(12))
+    print("df_dept.head(10)= ", df.head(10))
     df.to_excel("df.xlsx")
     print(df.describe())
 
